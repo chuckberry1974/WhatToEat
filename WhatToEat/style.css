@@ -1,0 +1,63 @@
+body {
+  background-color: white;
+}
+#question {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  border: 1 px solid black;
+  font-size: 30px;
+  background-color: grey;
+}
+#choiceContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 5px;
+  border-color: black;
+}
+#choice1, #choice2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: yellow;
+  color: red;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#barContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 250px;
+  border: 5px;
+  border-color: black;
+}
+.graph {
+  background-color: #DDD;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: none;
+  border-top: none;
+  clear: both;
+  color: #000;
+  margin: 1em;
+  width: 15em;
+}
+.barchart {
+  background-color: green;
+}
+#barchart1, #barchart2 {
+  
+}
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: grey;
+    height: 50px;
+    border: 1 px solid black;
+}
+
+.text {
+  background-color: grey;
+}

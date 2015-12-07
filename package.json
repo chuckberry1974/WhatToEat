@@ -1,0 +1,19 @@
+{
+  "name": "whattoeat",
+  "version": "1.0.0",
+  "description": "Choice of Meals ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tianster/WhatToEat.git"
+  },
+  "author": "Tian and Steve Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tianster/WhatToEat/issues"
+  },
+  "homepage": "https://github.com/Tianster/WhatToEat#readme"
+}
