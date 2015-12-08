@@ -4,30 +4,33 @@
     <meta charset="utf-8">
     <title>HELPx2!!!</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="timer.css">
     <script type="app.js"></script>
   </head>
   <body>
-    <div id="question">WHAT SHOULD I EAT TODAY???</div>
-                <div id="choiceContainer">
-                  <button id="choice1">choice1</button>
-                  <button id="choice2">choice2</button>
-                </div>
-                <div id="barContainer">
-                  <ul class="graph">
-                    <li class="barchart">20%</li>
-                    <li class="barchart">75%</li>
-                  </ul>
-                </div>
-    <div class="timer">
-            <div class="mask"></div>
+
+
+    <div id="title-bar">
+        <h1>CHOOSE YOUR CALORIES INTAKE</h1>
     </div>
-    <form>
-          Food Choice 1:<br>
-          <input type="text" name="foodchoice1">
-          <br>
-          Food Choice 2:<br>
-          <input type="text" name="foodchoice2">
-    </form>
+
+
+    <div class="body_frame">
+      <div class="img-container">
+        <img id="chicken"class="picture"src="image/chicken.jpeg" style="padding-right: 70px">
+        <img id="coke"class="picture"src="image/coke.jpeg" style="padding-right: 70px;">
+        <img id="fries"class="picture"src="image/fries.jpeg">
+      </div>
+
+    </div>
+
+    <div class="results_frame">
+
+
+      <div id="results">Amount of calories</div>
+
+      <input type="text" id="text" maxlength="35 value="" class="mytext" />
+
+    </div>
+
   </body>
 </html>
