@@ -20,7 +20,7 @@ border-radius: 3px;
 
 .body_frame {
   justify-content: center;
-  height: 400px;
+  height: 450px;
   background-color: #F79F81;
   border-color: white;
   border-style: solid;
@@ -28,16 +28,35 @@ border-radius: 3px;
 
 }
 
-#chicken {
-border-radius: 10%;
+.picture {
+/*border-radius: 10%;*/
 }
 
-#coke {
-border-radius: 10%;
+
+
+.dropDownContainer {
+margin-top: 10px;
+display: flex;
+justify-content: space-around;
 }
 
-#fries {
-border-radius: 10%;
+.caloriesContainer {
+margin-top: 25px;
+color: black;
+display: flex;
+justify-content: space-around;
+}
+
+.calories {
+
+color: black;
+border: 1px solid red;
+width: 100px;
+height: 25px;
+background-color: white;
+margin-top: 10px;
+margin-bottom: 10px;
+
 }
 
 
@@ -64,13 +83,24 @@ border-radius: 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 70px;
+  padding-top: 30px;
+}
+.img-container img{
+  margin-right: 85px;
+  margin-left: 85px;
+  border-radius: 50%;
 }
 
 .mytext {
   text-align: center;
-  border: 1px solid blue;
+  border: 1px solid pink;
   margin-top: 40px;
   height: 30px;
+
+}
+
+#mainDish {
+
+  margin 50;
 
 }

@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <script type="app.js"></script>
   </head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   <body>
 
 
@@ -16,29 +22,54 @@
 
     <div class="body_frame">
       <div class="img-container">
-        <img id="chicken"class="picture"src="image/chicken.jpeg" style="padding-right: 70px">
-        <img id="coke"class="picture"src="image/coke.jpeg" style="padding-right: 70px;">
+        <img id="chicken"class="picture"src="image/chicken.jpeg">
+        <img id="coke"class="picture"src="image/coke.jpeg">
         <img id="fries"class="picture"src="image/fries.jpeg">
       </div>
 
+  <div class="caloriesContainer">
+              <div class="calories" id="mainDish"></div>
+              <div class="calories" id="Drinks"></div>
+              <div class="calories" id="snacks"></div>
+  </div>
 
-    <div class="dropdown">
-        <button class="dropdown-toggle" type="button" data-toggle="dropdown">
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-        </ul>
+  <div class="dropDownContainer">
+      <div class="dropdown" id="Main">
+          <button class="dropdown-toggle" type="button" data-toggle="dropdown"> Main
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">hamburger</a></li>
+                    <li><a href="#">Cheeseburger</a></li>
+                    <li><a href="#">Regular Pizza</a></li>
+                </ul>
       </div>
 
+      <div class="dropdown" id="Drinks">
+          <button class="dropdown-toggle" type="button" data-toggle="dropdown"> Drinks
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">coke</a></li>
+                    <li><a href="#">Orange Juice</a></li>
+                    <li><a href="#">Beer</a></li>
+                </ul>
+      </div>
+
+      <div class="dropdown" id="snacks">
+          <button class="dropdown-toggle" type="button" data-toggle="dropdown"> Snacks
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">fries</a></li>
+                    <li><a href="#">nuggets</a></li>
+                    <li><a href="#">spagatti</a></li>
+                </ul>
+      </div>
+
+  </div>
 
 </div>
 
 
-
     <div class="results_frame">
-
 
       <div id="results">Amount of calories</div>
 
