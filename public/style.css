@@ -5,7 +5,7 @@ body {
 #title-bar {
 
 flex: none;
-background-color: #F5ECCE;
+background-color: black;
 border-color: white;
 border-style: solid;
 border-radius: 3px;
@@ -16,15 +16,17 @@ border-radius: 3px;
  color: orange;
  font-size: 28px;
  text-align: center;
+ font-family: 'Nixie One', cursive;
 }
 
 .body_frame {
   justify-content: center;
   height: 450px;
-  background-color: #F79F81;
+  background-color: black;
   border-color: white;
   border-style: solid;
   border-radius: 5px;
+
 
 }
 
@@ -45,6 +47,7 @@ margin-top: 25px;
 color: black;
 display: flex;
 justify-content: space-around;
+
 }
 
 .calories {
@@ -60,24 +63,21 @@ margin-bottom: 10px;
 }
 
 
-.results_frame {
+#results_container {
   text-align: center;
-  height: 200px;
+  display: block;
+  height: 40px;
+  width: 130px;
   background-color: #F6E3CE;
-  border-color: white;
+  border-color: black;
   border-style: solid;
-  border-radius: 3px;
+  border-radius: 0.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 
 }
 
-#results {
-
-  text-align: center;
-  margin-top: 30px;
-  font-size: 30px;
-  color: black;
-
-}
 
 .img-container {
   display: flex;
@@ -99,8 +99,12 @@ margin-bottom: 10px;
 
 }
 
-#mainDish {
+p1 {
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  font-style: italic;
+  font-size: 28px;
 
-  margin 50;
 
 }

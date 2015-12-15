@@ -1,4 +1,4 @@
-{"menu": {
+[{"menu": {
 
     "items": [
         {
@@ -62,50 +62,50 @@
             "category":"food",
             "sizes":["small","large"],
             "calories": [300, 500]
-        }
+        },
 
         {   "name":"noodle",
             "category":"food",
             "sizes":["small","large"],
             "calories": [130, 200]
-        }
+        },
 
         {   "name":"fried rice",
             "category":"food",
             "sizes":["small","large"],
             "calories": [80, 180]
-        }
+        },
 
         {   "name":"nuggets",
             "category":"junk food",
             "sizes":["small","large"],
             "calories": [120, 200]
-        }
+        },
 
         {   "name":"spagatti",
             "category":"junk food",
             "sizes":["small","large"],
             "calories": [60, 80],
 
-        }
+        },
 
         {   "name":"sliced cooked pork",
             "category":"food",
             "sizes":["small","large"],
             "calories": [130, 230]
-        }
+        },
 
         {   "name":"bread per slice",
             "category":"junk food",
             "sizes":["small","large"],
             "calories": [75, 140]
-        }
+        },
 
         {   "name":"Potatoes",
             "category":"food",
             "sizes":["small","large"],
             "calories": [120, 180]
-        }
+        },
 
         {   "name":"Milk, whole",
             "category":"drinks",
@@ -114,4 +114,4 @@
         }
 
     ]
-}}
+}}]
