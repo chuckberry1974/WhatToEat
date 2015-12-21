@@ -2,26 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>HELPx2!!!</title>
+    <title>WhatToEat!</title>
     <link rel="stylesheet" href="style.css">
-
   </head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <body>
-
-  <div id="title-bar">
-        <h1>CHOOSE YOUR CALORIES INTAKE</h1>
+  <div class="title-container">
+            <ul id="navlist">
+              <li>Diet</li>
+              <li>Exercise</li>
+              <li>Profiles</li>
+            </ul>
   </div>
-
   <div class="body_frame">
     <div class="img-container">
-        <!-- <img id="chicken"class="picture"src="image/chicken.jpeg">
-        <img id="coke"class="picture"src="image/coke.jpeg">
         <img id="fries"class="picture"src="image/fries.jpeg"> -->
     </div>
-
   <div class="caloriesContainer">
         <div class="calories" id="mainDish"></div>
         <div class="calories" id="Drinks"></div>
@@ -57,169 +52,10 @@
   </div>
 </form>
   </div>
-
-  <p1>Amount of calories</p1>
+        <p1>Amount of calories</p1>
   <div id="results_container">
-
   </div>
-  <script type="text/javascript" src="../listOfFood.json"></script>
-  <script>
-
-    var data =
-          [
-            {
-                "name":"coke",
-                "category":"drinks",
-                "sizes":["small","large"],
-                "calories": [97, 200]
-            },
-
-            {
-                "name":"diet coke",
-                "category":"drinks",
-                "sizes":["small","large"],
-                "calories": [3, 6]
-            },
-            {
-                "name":"beer",
-                "category":"drinks",
-                "sizes":["small","large"],
-                "calories": [150, 250]
-            },
-
-            {
-                "name":"orange juice",
-                "category":"drinks",
-                "sizes":["small","large"],
-                "calories": [115, 140]
-            },
-
-            {
-                "name":"coffee",
-                "category":"drinks",
-                "sizes":["small","large"],
-                "calories": [97, 120]
-
-            },
-
-            {   "name":"milk, whole",
-                "category":"drinks",
-                "sizes":["small","large"],
-                "calories": [150, 280]
-            },
-
-            {
-                "name":"hamburger",
-                "category":"food",
-                "sizes":["small","large"],
-                "calories": [280, 450]
-            },
-
-            {
-                "name":"cheeseburger",
-                "category":"food",
-                "sizes":["small","large"],
-                "calories": [300, 500]
-            },
-
-            {
-                "name":"fries",
-                "category":"junk food",
-                "sizes":["small","large"],
-                "calories": [150, 200]
-            },
-
-            {
-                "name":"regular pizza",
-                "category":"food",
-                "sizes":["small","large"],
-                "calories": [350, 500]
-            },
-
-            {   "name":"noodle",
-                "category":"food",
-                "sizes":["small","large"],
-                "calories": [130, 200]
-            },
-
-            {   "name":"fried rice",
-                "category":"food",
-                "sizes":["small","large"],
-                "calories": [80, 180]
-            },
-
-            {   "name":"nuggets",
-                "category":"junk food",
-                "sizes":["small","large"],
-                "calories": [120, 200]
-            },
-
-            {   "name":"spagatti",
-                "category":"junk food",
-                "sizes":["small","large"],
-                "calories": [60, 80],
-
-            },
-
-            {   "name":"sliced cooked pork",
-                "category":"food",
-                "sizes":["small","large"],
-                "calories": [130, 230]
-            },
-
-            {   "name":"bread per slice",
-                "category":"junk food",
-                "sizes":["small","large"],
-                "calories": [75, 140]
-            },
-
-            {   "name":"Potatoes",
-                "category":"food",
-                "sizes":["small","large"],
-                "calories": [120, 180]
-            }
-
-
-        ]
-    var myFunctionA = function () {
-      data.forEach(function (foodname) {
-        if (foodname.name === document.getElementById('foodChoice').value) {
-        document.getElementById('mainDish').textContent = foodname.calories[0]
-        var datafood = foodname.calories[0]
-        document.getElementById('results_container').textContent = document.querySelector('#mainDish').innerHTML
-        }
-      })
-    }
-
-    var myFunctionB = function () {
-      data.forEach(function (drinksname) {
-      if (drinksname.name === document.getElementById('drinks').value) {
-      document.getElementById('Drinks').textContent = drinksname.calories[0]
-      var datadrink = drinksname.calories[0]
-    }
-    })}
-
-    var myFunctionC = function () {
-      data.forEach(function (junkfoodname) {
-      if (junkfoodname.name === document.getElementById('junkfood').value) {
-      document.getElementById('snacks').textContent = junkfoodname.calories[0]
-      var datajunk = junkfoodname.calories[0]
-      // console.log(datajunk)
-    }
-    })}
-
-    document.addEventListener("change", function() {
-        var sum = parseInt(document.getElementById("mainDish").innerHTML, 10) +
-        parseInt(document.getElementById("Drinks").innerHTML, 10) +
-        parseInt(document.getElementById("snacks").innerHTML, 10)
-        // console.log(parseInt(document.getElementById("mainDish").innerHTML, 10))
-        // console.log(parseInt(document.getElementById("Drinks").innerHTML, 10))
-        // console.log(parseInt(document.getElementById("snacks").innerHTML, 10))
-        // console.log('sum is', sum)
-        document.getElementById('results_container').innerHTML = sum
-    })
-
-
+  <script src="script.js">
   </script>
   </body>
 </html>
