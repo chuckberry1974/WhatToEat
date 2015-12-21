@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Tianster/WhatToEat#readme",
   "dependencies": {
+    "body-parser": "^1.14.2",
     "express": "^4.13.3",
     "mongoose": "^4.2.9",
     "nodemon": "^1.8.1"
