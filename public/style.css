@@ -1,9 +1,19 @@
 body {
   background-color: #F2F2F2;
+  max-width: 1200px;
+
+}
+
+#basalMetabolism {
+  margin-bottom: 10px;
+  border: 5px solid white;
+  max-width: 200px;
+  height: 30px;
+
 }
 
 .title-container {
-
+text-align: center;
 width: 100%;
 height:70px;
 background-color: #ff733d;
@@ -14,12 +24,13 @@ text-shadow: 0 -1px 0px #b34525;
 
 }
 
-/*.title-container h1 {
- color: white;
- font-size: 28px;
- font-family: Helvetica;
- margin-left: 20px;
-}*/
+p {
+
+font-family: Helvetica;
+padding-bottom: 30px;
+
+}
+
 
 #navlist li {
   color: black;
@@ -30,20 +41,38 @@ text-shadow: 0 -1px 0px #b34525;
   display: inline;
 }
 
+.Mainbody {
+  display: flex;
+  justify-content: space-between;
 
-.body_frame {
+}
+
+.body_frame1 {
   justify-content: center;
-  height: 450px;
+  height: 550px;
   background-color: black;
   border-color: white;
   border-style: solid;
   border-radius: 5px;
+  width: 700px;
+  color: white;
 }
 
+.body_frame2 {
+  justify-content: center;
+  height: 550px;
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  width: 700px;
+}
+
+
 .caloriesContainer {
+display: flex;
 margin-top: 25px;
 color: black;
-display: flex;
 justify-content: space-around;
 border-radius: 5px;
 

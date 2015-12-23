@@ -13,48 +13,69 @@
               <li>Profiles</li>
             </ul>
   </div>
-  <div class="body_frame">
-    <div class="img-container">
-        <img id="fries"class="picture"src="image/fries.jpeg"> -->
+<div class="Mainbody">
+    <div class="body_frame1">
+        <p>Key in your Name  <input type="text" value='Name' /></p>
+          Male<input type="checkbox" id='Male'/>
+          Female <input type="checkbox" id='Female' />
+            <p>Key in your Age
+              <select name="Age" id="age">
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+              </select>
+            </p>
+            <p>Key in your Weight(Kilograms) <input type="text" value='Weight' /></p>
+            <p>Key in your Height (metres) <input type="text" value='Height' /></p>
+            <span style="  font-family: Helvetica">Basal Metabolism</span>
+            <div id='basalMetabolism'></div>
+
     </div>
-  <div class="caloriesContainer">
-        <div class="calories" id="mainDish"></div>
-        <div class="calories" id="Drinks"></div>
-        <div class="calories" id="snacks"></div>
-  </div>
-  <form>
-  <div class="dropDownContainer">
-        <select id="foodChoice" onchange="myFunctionA()">
-          <option value="hamburger"> hamburger
-          <option value="cheeseburger"> Cheeseburger
-          <option value="regular pizza"> Regular Pizza
-          <option value="noodle"> noodle
-          <option value="fried rice"> fried rice
-          <option value="sliced cooked pork"> sliced cooked pork
-          <option value="Potatoes"> Potatoes
-        </select>
+    <div class="body_frame2">
+            <div class="caloriesContainer">
+                  <div class="calories" id="mainDish"></div>
+                  <div class="calories" id="Drinks"></div>
+                  <div class="calories" id="snacks"></div>
+            </div>
+              <div class="dropDownContainer">
+                  <select id="foodChoice" class="random">
+                    <option value="hamburger"> hamburger
+                    <option value="cheeseburger"> Cheeseburger
+                    <option value="regular pizza"> Regular Pizza
+                    <option value="noodle"> noodle
+                    <option value="fried rice"> fried rice
+                    <option value="sliced cooked pork"> sliced cooked pork
+                    <option value="Potatoes"> Potatoes
+                  </select>
+                  <select id="drinks" class="random">
+                    <option value="coke"> coke
+                    <option value="orange juice"> orange
+                    <option value="beer"> beer
+                    <option value="diet coke"> diet coke
+                    <option value="coffee"> coffee
+                    <option value="milk, whole"> milk, whole
+                  </select>
+                  <select id="junkfood" class="random">
+                    <option value="fries"> fries
+                    <option value="nuggets"> nuggets
+                    <option value="spagatti"> spagatti
+                    <option value="bread per slice"> bread per slice
+                  </select>
 
-        <select id="drinks" onchange="myFunctionB()">
-          <option value="coke"> coke
-          <option value="orange juice"> orange
-          <option value="beer"> beer
-          <option value="diet coke"> diet coke
-          <option value="coffee"> coffee
-          <option value="milk, whole"> milk, whole
-        </select>
-
-        <select id="junkfood" onchange="myFunctionC()">
-          <option value="fries"> fries
-          <option value="nuggets"> nuggets
-          <option value="spagatti"> spagatti
-          <option value="bread per slice"> bread per slice
-        </select>
-  </div>
-</form>
-  </div>
-        <p1>Amount of calories</p1>
-  <div id="results_container">
-  </div>
+              </div>
+              <p1>Amount of calories</p1>
+              <div id="results_container"></div>
+    </div>
+</div>
   <script src="script.js">
   </script>
   </body>
