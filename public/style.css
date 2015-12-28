@@ -22,13 +22,19 @@ margin-bottom: 30px;
 
 
 #bm {
-border: 5px solid black;
+border: 1px solid gold;
 max-width: 200px;
-height: 30px;
+height: 25px;
 text-align: center;
-margin-left: 10px;
+margin-left: 20px;
 
+}
 
+#submit {
+
+margin-left: 20px;
+
+margin-top: 20px;
 }
 
 .title-container {
