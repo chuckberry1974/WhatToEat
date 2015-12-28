@@ -13,33 +13,24 @@
               <li>Profiles</li>
             </ul>
   </div>
-<div class="Mainbody">
+  <div class="Mainbody">
     <div class="body_frame1">
-        <p style="margin-top: 100px">Key in your Name  <input type="text" value='Name' /></p>
-        <p>Male<input type="checkbox" id='Male'/>
-        <p>Female <input type="checkbox" id='Female' />
-            <p>Key in your Age
-              <select name="Age" id="age">
-                    <option value="">20</option>
-                    <option value="">21</option>
-                    <option value="">22</option>
-                    <option value="">23</option>
-                    <option value="">24</option>
-                    <option value="">25</option>
-                    <option value="">26</option>
-                    <option value="">27</option>
-                    <option value="">28</option>
-                    <option value="">29</option>
-                    <option value="">30</option>
-                    <option value="">31</option>
-              </select>
-            </p>
-            <p>Key in your Weight(Kilograms) <input type="text" value='Weight' /></p>
-            <p>Key in your Height (metres) <input type="text" value='Height' /></p>
-            <span>Basal Metabolism</span>
-            <div id='basalMetabolism'></div>
-
+      <span class= "input">Male</span><input type="checkbox" id='Male' />
+      <span>Female</span><input type="checkbox" id='Female' /><br/>
+      <span>Age (Years)</span>
+      <input type="number" value='Age in years' id='Age' /><br/>
+      <span>Weight(Kilograms)</span>
+      <input type="number" value='weight' id='Weight' /><br/>
+      <span>Key in your Height (Centimetres)</span>
+      <input type="number" value='Height in cm' id='Height' />
+      <br/>
+      <span>Basal Metabolic Rate</span>
+      <br/>
+      <div id='bm'>
+      <button type="button" onclick="calCounter()">Submit To Calculate</button>
+      </div>
     </div>
+
     <div class="body_frame2">
             <div class="image">
               <img src = "./image/icon-food.png";>
@@ -57,7 +48,7 @@
                     <option value="noodle"> noodle
                     <option value="fried rice"> fried rice
                     <option value="sliced cooked pork"> sliced cooked pork
-                    <option value="Potatoes"> Potatoes
+                    <option value="potatoes"> Potatoes
                   </select>
                   <select id="drinks" class="random">
                     <option value="coke"> coke

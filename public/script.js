@@ -34,3 +34,17 @@ Array.from(selects).forEach(element => {
       })
   })
 })
+
+function calCounter() {
+  var gender, age, weight, height, basM, basF
+  age = document.getElementById('Age').value
+  weight = document.getElementById('Weight').value
+  height = document.getElementById('Height').value
+  if (document.getElementById('Male').checked === true) {
+    basM = 66 + (13.7 * weight) + (5 * height) - (6.8 * age)
+    document.getElementById('bm').innerHTML = basM
+  } else {
+    basF = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age)
+    document.getElementById('bm').innerHTML = basF
+  }
+}
